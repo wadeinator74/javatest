@@ -1,5 +1,18 @@
 hello js rocket
-
 <script type="text/javascript">
-	console.log('hello there friends!');
+	swfX = 0;
+	swfY = 0;
+
+	scale (swfX, swfY);
+
+	function scale (x, y)
+	{
+		var screenX = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		var screenY = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		if (screenX < x ||screenY <y)
+		{
+
+		}
+		return (x, y);
+	}
 </script>
