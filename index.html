@@ -7,8 +7,8 @@ hello js rocket
 
 	function scale (x, y)
 	{
-		var screenX = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-		var screenY = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+		var screenX = screen.availWidth;
+		var screenY = screen.availHeight;
 		if (screenX < x ||screenY <y)
 		{
 
