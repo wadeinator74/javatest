@@ -1,22 +1,22 @@
 hello js rocket
 <script type="text/javascript">
-	swfX = 2000;
-	swfY = 2000;
+	swfX = 2346461268;
+	swfY = 15613548;
 	var screenX = screen.availWidth;
 	var screenY = screen.availHeight;
 
 	if (screenX < swfX)
 	{
 		var temp = swfX;
-		temp - screenX;
-		swfX - temp;
-		swfY - temp;
+		temp = temp - screenX;
+		swfX = swfX - temp;
+		swfY = swfY - temp;
 	}
-	if (screenX < swfY)
+	if (screenY < swfY)
 	{
 		var temp = swfY;
-		temp - screenY;
-		swfX - temp;
-		swfY - temp;
+		temp = temp - screenY;
+		swfX = swfX - temp;
+		swfY = swfY - temp;
 	}
 </script>
