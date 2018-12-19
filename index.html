@@ -1,18 +1,22 @@
 hello js rocket
 <script type="text/javascript">
-	swfX = 0;
-	swfY = 0;
+	swfX = 2000;
+	swfY = 2000;
+	var screenX = screen.availWidth;
+	var screenY = screen.availHeight;
 
-	scale (swfX, swfY);
-
-	function scale (x, y)
+	if (screenX < swfX)
 	{
-		var screenX = screen.availWidth;
-		var screenY = screen.availHeight;
-		if (screenX < x ||screenY <y)
-		{
-
-		}
-		return (x, y);
+		var temp = swfX;
+		temp - screenX;
+		swfX - temp;
+		swfY - temp;
+	}
+	if (screenX < swfY)
+	{
+		var temp = swfY;
+		temp - screenY;
+		swfX - temp;
+		swfY - temp;
 	}
 </script>
